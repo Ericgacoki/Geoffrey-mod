@@ -19,6 +19,9 @@ class ChristmasActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        // change title
+        supportActionBar?.title = "Christmas"
+
         _christmasBinding = DataBindingUtil.setContentView(this, R.layout.activity_christmas)
 
         /** safely set clickListener and navigate using an Intent*/
@@ -28,7 +31,7 @@ class ChristmasActivity : AppCompatActivity() {
             startActivity(intentToNewYearActivity)
             /* show toast message */
             Toast.makeText(this, "welcome to new year", Toast.LENGTH_SHORT).show()
-            finish()
+            // finish()
 
             /** finish() clears activity from the back stack so that the user can not navigate
              *back by pressing the device back button*/

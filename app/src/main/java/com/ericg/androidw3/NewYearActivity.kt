@@ -17,6 +17,9 @@ class NewYearActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        // change title
+        supportActionBar?.title = "New Year"
+
         _newYearBinding = DataBindingUtil.setContentView(this, R.layout.activity_new_year)
 
         newYearBinding?.button2?.setOnClickListener {
@@ -30,26 +33,30 @@ class NewYearActivity : AppCompatActivity() {
 
     private fun showDialog() {
         val dialogBinding: DialogExitBinding? =
-                DataBindingUtil.inflate(layoutInflater, R.layout.dialog_exit, null, false)
-        AlertDialog.Builder(this).apply {
+            DataBindingUtil.inflate(layoutInflater, R.layout.dialog_exit, null, false)
+
+        val dialogBuilder = AlertDialog.Builder(this).apply {
             setView(dialogBinding?.root)
-        }.create().show()
+        }
+        dialogBuilder.create().show()
 
         dialogBinding?.btnNo?.setOnClickListener {
             Toast.makeText(this, "cancelled", Toast.LENGTH_SHORT).show()
+            dialogBuilder.create().dismiss()
         }
         dialogBinding?.btnYes?.setOnClickListener {
             finish()
         }
     }
 
+   /* uncomment if you want this feature*/
     /** confirm before exiting the app*/
+    /*
 
     var confirm: Boolean = true
 
     @Suppress("DEPRECATION")
     override fun onBackPressed() {
-        super.onBackPressed()
         if (confirm) {
 
             Toast.makeText(this, "press again to exit", Toast.LENGTH_SHORT).show()
@@ -57,8 +64,8 @@ class NewYearActivity : AppCompatActivity() {
             Handler().postDelayed({
                 confirm = true
             }, 2000)
-        } else finish()
-    }
+        } else super.onBackPressed()
+    } */
 
     override fun onDestroy() {
         super.onDestroy()
