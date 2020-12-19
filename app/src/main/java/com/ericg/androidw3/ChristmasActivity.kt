@@ -2,6 +2,7 @@ package com.ericg.androidw3
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.ericg.androidw3.databinding.ActivityChristmasBinding
@@ -25,6 +26,8 @@ class ChristmasActivity : AppCompatActivity() {
         val intentToNewYearActivity = Intent(this, NewYearActivity::class.java)
         christmasBinding?.button1?.setOnClickListener {
             startActivity(intentToNewYearActivity)
+            /* show toast message */
+            Toast.makeText(this, "welcome to new year", Toast.LENGTH_SHORT).show()
             finish()
 
             /** finish() clears activity from the back stack so that the user can not navigate
