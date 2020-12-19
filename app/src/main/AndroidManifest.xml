@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ericg.androidw3">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,8 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidW3">
-        <activity android:name=".NewYearActivity"></activity>
-        <activity android:name=".ChristmasActivity">
+        <activity
+            android:name=".NewYearActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ChristmasActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
