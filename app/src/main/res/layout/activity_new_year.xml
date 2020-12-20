@@ -21,7 +21,7 @@
             android:contentDescription="@string/happy_new_year"
             android:padding="3dp"
             android:background="@drawable/round_image"
-            android:src="@drawable/joy"
+            android:src="@drawable/christmas"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

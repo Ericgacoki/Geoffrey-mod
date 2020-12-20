@@ -21,7 +21,7 @@
             android:contentDescription="@string/merry_christmas"
             android:padding="3dp"
             android:background="@drawable/round_image"
-            android:src="@drawable/christmas"
+            android:src="@drawable/christmas_tree"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.448"

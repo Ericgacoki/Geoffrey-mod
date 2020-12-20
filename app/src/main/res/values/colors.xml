@@ -10,4 +10,5 @@
     <color name="semi_dark">#393536</color>
     <color name="color_maroon">#F50057</color>
     <color name="faded_maroon">#F66B9D</color>
+    <color name="color_btn_night">#604350</color>
 </resources>

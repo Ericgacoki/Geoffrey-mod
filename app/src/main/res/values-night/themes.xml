@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Theme.AndroidW3" parent="Theme.AppCompat.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/semi_dark</item>
-        <item name="colorPrimaryVariant">@color/semi_dark</item>
+        <item name="colorPrimary">@color/color_btn_night</item>
+        <item name="colorPrimaryVariant">@color/color_btn_night</item>
         <item name="android:textColor">@color/white</item>
         <item name="colorOnPrimary">@color/black</item>
         <!-- Secondary brand color. -->
