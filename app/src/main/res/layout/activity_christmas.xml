@@ -10,6 +10,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#15F50057"
         tools:context=".ChristmasActivity">
 
         <ImageView
@@ -50,6 +51,7 @@
             android:layout_marginHorizontal="15dp"
             android:background="@drawable/button_bg"
             android:text="@string/next"
+            android:elevation="0dp"
             android:textColor="@color/white"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
