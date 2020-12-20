@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ChristmasActivity">
+
+        <ImageView
+            android:id="@+id/headerImage2"
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            android:layout_margin="15dp"
+            android:contentDescription="@string/happy_new_year"
+            android:padding="3dp"
+            android:background="@drawable/round_image_night"
+            android:src="@drawable/ic_christmas_night"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:text="@string/happy_new_year"
+            android:textAlignment="center"
+            android:textColor="#C885A3"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/button2"
+            app:layout_constraintEnd_toEndOf="@+id/headerImage2"
+            app:layout_constraintStart_toStartOf="@+id/headerImage2"
+            app:layout_constraintTop_toBottomOf="@+id/headerImage2" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg_night"
+            android:text="@string/exit"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/headerImage2"
+            app:layout_constraintStart_toStartOf="@+id/headerImage2"
+            app:layout_constraintTop_toBottomOf="@+id/text2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
