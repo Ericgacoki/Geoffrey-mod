@@ -3,35 +3,28 @@ package com.ericg.androidw3
 import android.os.Bundle
 import android.os.Handler
 import android.widget.Toast
-import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.ericg.androidw3.databinding.ActivityNewYearBinding
-import com.ericg.androidw3.databinding.DialogExitBinding
 
 class NewYearActivity : AppCompatActivity() {
-    /** explanation is similar to the one in ChristmasActivity.kt*/
-
     private var _newYearBinding: ActivityNewYearBinding? = null
     private val newYearBinding get() = _newYearBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         // change title
-        supportActionBar?.title = "New Year"
+        supportActionBar?.title = "Hello Esther"
 
         _newYearBinding = DataBindingUtil.setContentView(this, R.layout.activity_new_year)
 
         newYearBinding?.button2?.setOnClickListener {
-            // call show dialog function
-            showDialog()
-
+            Toast.makeText(this, "Welcome, and I'm missing you so much out here", Toast.LENGTH_LONG).show()
+            finish()
         }
     }
 
-    /** create and show a dialog*/
-
-    private fun showDialog() {
+    /*private fun showDialog() {
         val dialogBinding: DialogExitBinding? =
             DataBindingUtil.inflate(layoutInflater, R.layout.dialog_exit, null, false)
 
@@ -47,25 +40,20 @@ class NewYearActivity : AppCompatActivity() {
         dialogBinding?.btnYes?.setOnClickListener {
             finish()
         }
-    }
+    }*/
 
-   /* uncomment if you want this feature*/
-    /** confirm before exiting the app*/
-    /*
-
-    var confirm: Boolean = true
+   private var confirm: Boolean = true
 
     @Suppress("DEPRECATION")
     override fun onBackPressed() {
         if (confirm) {
-
             Toast.makeText(this, "press again to exit", Toast.LENGTH_SHORT).show()
             confirm = false
             Handler().postDelayed({
                 confirm = true
             }, 2000)
         } else super.onBackPressed()
-    } */
+    }
 
     override fun onDestroy() {
         super.onDestroy()

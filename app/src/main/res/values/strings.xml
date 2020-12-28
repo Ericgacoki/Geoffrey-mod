@@ -1,8 +1,15 @@
 <resources>
-    <string name="app_name">Android w3</string>
-    <string name="next">Next</string>
-    <string name="merry_christmas">Merry Christmas</string>
-    <string name="happy_new_year">Happy new Year</string>
-    <string name="exit">Exit</string>
+    <string name="app_name">Dear Esther</string>
+    <string name="next">Next…</string>
+    <string name="merry_christmas">During this festive season of giving, let us
+        take time to slow down and enjoy the simple things.
+        May this wonderful time of the year touch your heart in a special way.</string>
+    <string name="happy_new_year">Mungai is wishing you a season of happiness and blessings
+        from heaven above, not just today but throughout the New Year.
+        A Merry Christmas to you and your whole family.</string>
+    <string name="thank_you">Thank you</string>
     <string name="confirm_exit">Are you sure you want to exit ?</string>
+    <string name="new_year_desc">new year</string>
+    <string name="mode_night">Night mode</string>
+    <string name="mode_light">Light mode</string>
 </resources>
