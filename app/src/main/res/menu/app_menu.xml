@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/mode_night"
+        android:title="@string/mode_night"
+        android:icon="@drawable/ic_night_icon"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/mode_light"
+        android:title="@string/mode_light"
+        android:icon="@drawable/ic_light_icon"
+        app:showAsAction="ifRoom" />
+</menu>
