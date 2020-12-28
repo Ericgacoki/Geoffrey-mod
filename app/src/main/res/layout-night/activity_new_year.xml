@@ -15,12 +15,10 @@
         <ImageView
             android:id="@+id/headerImage2"
             android:layout_width="0dp"
-            android:layout_height="300dp"
-            android:layout_margin="15dp"
-            android:contentDescription="@string/happy_new_year"
-            android:padding="3dp"
-            android:background="@drawable/round_image_night"
-            android:src="@drawable/ic_christmas_night"
+            android:layout_height="280dp"
+            android:contentDescription="@string/new_year_desc"
+            android:padding="1dp"
+            android:src="@drawable/esther_1"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -31,28 +29,34 @@
             android:id="@+id/text2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
             android:fontFamily="cursive"
             android:text="@string/happy_new_year"
             android:textAlignment="center"
             android:textColor="#C885A3"
-            android:textSize="35sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@id/button2"
+            android:textSize="28sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/headerImage2"
+            app:layout_constraintHorizontal_bias="0.842"
             app:layout_constraintStart_toStartOf="@+id/headerImage2"
-            app:layout_constraintTop_toBottomOf="@+id/headerImage2" />
+            app:layout_constraintTop_toBottomOf="@+id/headerImage2"
+            app:layout_constraintVertical_bias="0.175" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:background="@drawable/button_bg_night"
-            android:text="@string/exit"
+            android:text="@string/thank_you"
+            android:textAllCaps="false"
             android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/headerImage2"
             app:layout_constraintStart_toStartOf="@+id/headerImage2"
-            app:layout_constraintTop_toBottomOf="@+id/text2" />
+            app:layout_constraintTop_toBottomOf="@+id/text2"
+            app:layout_constraintVertical_bias="0.85" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
